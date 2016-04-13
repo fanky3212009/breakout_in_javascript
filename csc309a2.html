@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Break Out</title>
+	<style>
+	#score {
+			padding:10px;
+			text-align:center;
+			height:100px;
+			width:5%;
+			float:right;
+			position:fixed;
+			right:0;
+			top:0px;
+			background-color:white;
+			border: 2px solid #a1a1a1;
+		}
+	#life {
+			padding:10px;
+			text-align:center;
+			height:100px;
+			width:5%;
+			float:right;
+			position:fixed;
+			right:0;
+			top:150px;
+			background-color:white;
+			border: 2px solid #a1a1a1;
+		}
+	</style>
+	
+
+</head>
+
+<body>
+	<div id="score">
+	<h4 id="s">SCORE: </h4>
+	</div>
+	<div id="life">
+	<h4 id="l">LIFE: </h4>
+	</div>
+	<canvas id="myCanvas" width="1240" height="640" style="border:1px solid #d3d3d3;" onmousemove="movePaddle(event)" onclick="move()">
+	</canvas>
+	<script src="a2.js"></script>
+	
+
+
+</body>
+</html>
